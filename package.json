@@ -7,7 +7,7 @@
         "test": "jest --passWithNoTests",
         "start": "webpack serve --mode development",
         "webpack": "webpack --mode production",
-        "build": "yarn run webpack && yarn run start ",
+        "build": "yarn run webpack",
         "lint": "eslint ."
     },
     "devDependencies": {
