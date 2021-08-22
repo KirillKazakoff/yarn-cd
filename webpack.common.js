@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
 
-
 module.exports = {
     target: 'web',
     entry: './src/index.js',
@@ -46,7 +45,6 @@ module.exports = {
                     loader: 'ts-loader',
                 },
             },
-            // { test: /\.(jpe?g|png|gif|svg|ico)$/i, use: { loader: "url-loader?name=app/images/[name].[ext]" } },
             {
                 test: /\.(png|jpg|gif|ttf|ico)$/i,
                 use: [
@@ -59,10 +57,6 @@ module.exports = {
                     },
                 ],
             },
-            // {
-            //     test: /\.(html)$/,
-            //     use: ['html-loader']
-            // },
         ],
     },
 
