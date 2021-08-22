@@ -4,7 +4,7 @@
     "main": "index.js",
     "license": "ISC",
     "scripts": {
-        "test": "jest",
+        "test": "jest --passWithNoTests",
         "start": "webpack serve --mode development",
         "webpack": "webpack --mode production",
         "build": "yarn run webpack && yarn run start ",
